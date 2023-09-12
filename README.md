@@ -1,6 +1,6 @@
 # MAIL
 1. creo un'array vuoto in cui vengono salvate le e-mail degli utenti
-1. con un prompt chiedo la e-mail dell'utente
+1. con un input chiedo la e-mail dell'utente
 1. creo una condizionale con cui verifico se la e-mail è gia nell'elenco
 1. stampo un messaggio appropriato sull'esito del controllo
 
