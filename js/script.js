@@ -22,7 +22,9 @@ btnMail.addEventListener('click', function(){
     messaggio = 'E-mail verificata, è autorizzato ad utilizzare i nostri servizi'
   }
   console.log(messaggio)
+  document.getElementById('output-messaggio').innerHTML = messaggio
 });
 
-
 // fine ESERCIZIO MAIL
+
+
