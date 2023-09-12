@@ -1,6 +1,11 @@
 // ESERCIZIO MAIL
 
-let mailRegistrate = ['massimo@yahoo.it'];
+let mailRegistrate = [
+  'massimo@yahoo.it',
+  'giovanni@yahoo.it',
+  'marco@yahoo.it',
+];
+
 let messaggioMail;
 const outputMail = document.getElementById('output-messaggio-mail');
 
@@ -37,6 +42,10 @@ btnMail.addEventListener('click', function(){
 
 // fine ESERCIZIO MAIL
 
+
+
+
+
 // ESERCIZIO DADI
 
 const btnDadi = document.getElementById('bottone-dadi');
@@ -52,15 +61,19 @@ btnDadi.addEventListener('click', function(){
   
   if(numeroUtente == numeroComputer){
   
-    messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Avete ottenuto lo stesso numero`;
+    messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Avete ottenuto lo stesso numero, PAREGGIO!`;
+    outputDadi.style.color = 'blue'
+
   
   }else if(numeroUtente > numeroComputer){
   
     messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Complimenti, HAI VINTO!`;
+    outputDadi.style.color = 'green'
   
   }else{
   
     messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Mi dispiace, HAI PERSO!`;
+    outputDadi.style.color = 'red'
   
   }
 

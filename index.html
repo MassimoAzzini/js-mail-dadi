@@ -14,21 +14,29 @@
 <body>
   <div class="container">
 
-    <section class="esercizio-mail d-flex justify-content-around my-3 bg-light">
-      <div class="row my-3 w-100">
-        <div class="col-8">
-          <label for="input-mail">Email</label>
-          <span id="output-messaggio-mail"></span>
-          <input type="email" class="form-control" id="input-mail">
+    <section class="esercizio-mail my-3 bg-light d-flex flex-column align-items-center">
+
+      <h1>ESERCIZIO MAIL</h1>
+      <div class="row my-3 w-50 border">
+
+        <div class="col">
+          <label class="fw-bold my-2" for="input-mail">Email</label>
+          <span id="output-messaggio-mail" class="ms-3"></span>
+          <input type="email" class="form-control" id="input-mail" placeholder="Inserisci la tua mail">
         </div>
-        <button id="bottone-mail" class="btn btn-primary col-4">Accedi</button>
+        
+        <div>
+          <button id="bottone-mail" class="btn btn-primary my-3">Accedi</button>
+        </div>
       </div>
-  
+
     </section>
   
-    <section class="esercizio-dadi d-flex justify-content-around my-3 bg-light">
-      <button id="bottone-dadi" class="btn btn-secondary">Genera</button>
-      <span id="output-messaggio-dadi"></span>
+    <section class="esercizio-dadi d-flex flex-column align-items-center my-3 bg-light">
+
+      <h1>ESERCIZIO DADI</h1>
+      <button id="bottone-dadi" class="btn btn-secondary my-3">Genera</button>
+      <span id="output-messaggio-dadi" class="mb-3" ></span>
   
     </section>
 
