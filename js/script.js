@@ -1,8 +1,8 @@
 // ESERCIZIO MAIL
 
 let mailRegistrate = ['massimo@yahoo.it'];
-let messaggio;
-const output = document.getElementById('output-messaggio');
+let messaggioMail;
+const outputMail = document.getElementById('output-messaggio-mail');
 
 const btnMail = document.getElementById('bottone-mail');
 
@@ -22,17 +22,17 @@ btnMail.addEventListener('click', function(){
 
   if(!mailEsistente){
 
-    messaggio = 'Mi dispiace ma non è autorizzato ad utilizzare i nostri servizi'
-    output.style.color = 'red';
+    messaggioMail = 'Mi dispiace ma non è autorizzato ad utilizzare i nostri servizi'
+    outputMail.style.color = 'red';
 
   }else{
 
-    messaggio = 'E-mail verificata, è autorizzato ad utilizzare i nostri servizi'
-    output.style.color = 'green';
+    messaggioMail = 'E-mail verificata, è autorizzato ad utilizzare i nostri servizi'
+    outputMail.style.color = 'green';
 
   }
-  console.log(messaggio);
-  output.innerHTML = messaggio;
+  console.log(messaggioMail);
+  outputMail.innerHTML = messaggioMail;
 });
 
 // fine ESERCIZIO MAIL
@@ -40,6 +40,8 @@ btnMail.addEventListener('click', function(){
 // ESERCIZIO DADI
 
 const btnDadi = document.getElementById('bottone-dadi');
+const outputDadi = document.getElementById('output-messaggio-dadi');
+
 let messaggioDadi;
 
 
@@ -50,19 +52,21 @@ btnDadi.addEventListener('click', function(){
   
   if(numeroUtente == numeroComputer){
   
-    messaggioDadi = 'Avete fatto lo stesso numero';
+    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Avete ottenuto lo stesso numero';
   
   }else if(numeroUtente > numeroComputer){
   
-    messaggioDadi = 'Che fortuna, HAI VINTO!';
+    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Complimenti, HAI VINTO!';
   
   }else{
   
-    messaggioDadi = 'Mi dispiace, HAI PERSO!';
+    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Mi dispiace, HAI PERSO!';
   
   }
 
   console.log(messaggioDadi);
+  outputDadi.innerHTML = messaggioDadi;
+
 });
 
 
