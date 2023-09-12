@@ -1,4 +1,7 @@
-let mailRegistrate = [];
+// ESERCIZIO MAIL
+
+let mailRegistrate = ['massimo@yahoo.it'];
+let messaggio
 
 const btnMail = document.getElementById('bottone-mail');
 
@@ -14,11 +17,12 @@ btnMail.addEventListener('click', function(){
   }
 
   if(!mailEsistente){
-    mailRegistrate.push(email);
-
-    console.log(email + ' nuova');
+    messaggio = 'Mi dispiace ma non è autorizzato ad utilizzare i nostri servizi'
   }else{
-    console.log('mail gia esistente')
+    messaggio = 'E-mail verificata, è autorizzato ad utilizzare i nostri servizi'
   }
-
+  console.log(messaggio)
 });
+
+
+// fine ESERCIZIO MAIL
