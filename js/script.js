@@ -52,15 +52,15 @@ btnDadi.addEventListener('click', function(){
   
   if(numeroUtente == numeroComputer){
   
-    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Avete ottenuto lo stesso numero';
+    messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Avete ottenuto lo stesso numero`;
   
   }else if(numeroUtente > numeroComputer){
   
-    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Complimenti, HAI VINTO!';
+    messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Complimenti, HAI VINTO!`;
   
   }else{
   
-    messaggioDadi = 'Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Mi dispiace, HAI PERSO!';
+    messaggioDadi = `Hai fatto ${numeroUtente}, il Computer ha fatto ${numeroComputer}: Mi dispiace, HAI PERSO!`;
   
   }
 
